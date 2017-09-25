@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF53C9631F76F817009A1DB8 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF53C9621F76F817009A1DB8 /* Chameleon.framework */; };
+		EF53C9651F76FB78009A1DB8 /* Chameleon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF53C9641F76FB78009A1DB8 /* Chameleon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF5547DB1F12693E00A7F5FE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5547DA1F12693E00A7F5FE /* CustomTextField.swift */; };
+		EF5547DD1F126B9300A7F5FE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5547DC1F126B9300A7F5FE /* SignUpViewController.swift */; };
+		EF5547E01F126DAE00A7F5FE /* Two.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5547DF1F126DAE00A7F5FE /* Two.storyboard */; };
+		EF5547E21F126E1000A7F5FE /* LogSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5547E11F126E1000A7F5FE /* LogSignViewController.swift */; };
+		EF5547E51F12760D00A7F5FE /* CustomButtonTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5547E41F12760D00A7F5FE /* CustomButtonTwo.swift */; };
+		EF5547E71F127BAB00A7F5FE /* CustomLabelTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5547E61F127BAB00A7F5FE /* CustomLabelTwo.swift */; };
+		EF5547E91F1280CF00A7F5FE /* LogInViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5547E81F1280CF00A7F5FE /* LogInViewControllerTwo.swift */; };
+		EF5547EB1F12837B00A7F5FE /* CustomTextFieldTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5547EA1F12837B00A7F5FE /* CustomTextFieldTwo.swift */; };
+		EF5547ED1F12858900A7F5FE /* SignUpViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5547EC1F12858900A7F5FE /* SignUpViewControllerTwo.swift */; };
+		EF5547EF1F129B9600A7F5FE /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5547EE1F129B9600A7F5FE /* CustomNavigationController.swift */; };
+		EF5547F31F12AE8500A7F5FE /* CustomNavigationControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5547F21F12AE8500A7F5FE /* CustomNavigationControllerTwo.swift */; };
+		EF5547F81F12BFD400A7F5FE /* TabBarMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5547F61F12BFD400A7F5FE /* TabBarMenu.storyboard */; };
+		EF5547FC1F12C98500A7F5FE /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5547FB1F12C98500A7F5FE /* CustomTabBarController.swift */; };
+		EF5547FE1F12CB2F00A7F5FE /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5547FD1F12CB2F00A7F5FE /* HomeTableViewController.swift */; };
+		EF5548001F12CB7E00A7F5FE /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5547FF1F12CB7E00A7F5FE /* CategoryTableViewController.swift */; };
+		EF5548021F12CBB100A7F5FE /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5548011F12CBB100A7F5FE /* FavoriteTableViewController.swift */; };
+		EF5548041F12CBD200A7F5FE /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5548031F12CBD200A7F5FE /* ProfileTableViewController.swift */; };
+		EF5548071F12CC3200A7F5FE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5548051F12CC3200A7F5FE /* Home.storyboard */; };
+		EF5548091F12CC8700A7F5FE /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5548081F12CC8700A7F5FE /* Category.storyboard */; };
+		EF55480C1F12CCF100A7F5FE /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF55480A1F12CCF100A7F5FE /* Favorite.storyboard */; };
+		EF55480E1F12CD3F00A7F5FE /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF55480D1F12CD3F00A7F5FE /* Profile.storyboard */; };
+		EF5548121F12EE0400A7F5FE /* FeaturedRecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5548111F12EE0400A7F5FE /* FeaturedRecipeTableViewCell.swift */; };
+		EF5548141F12F1E500A7F5FE /* LatestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5548131F12F1E500A7F5FE /* LatestTableViewCell.swift */; };
+		EF5548181F12F9EC00A7F5FE /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5548171F12F9EC00A7F5FE /* FeaturedCollectionViewCell.swift */; };
+		EF55481D1F13061D00A7F5FE /* HomeTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF55481C1F13061D00A7F5FE /* HomeTableHeader.xib */; };
+		EF55481F1F13080200A7F5FE /* HomeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF55481E1F13080200A7F5FE /* HomeTableHeaderView.swift */; };
+		EF7C7C361F11BF14000DFDC8 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C7C351F11BF14000DFDC8 /* CustomButton.swift */; };
+		EF7C7C381F11C3B4000DFDC8 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C7C371F11C3B4000DFDC8 /* CustomLabel.swift */; };
+		EF7C7C3A1F11C65D000DFDC8 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C7C391F11C65D000DFDC8 /* LogInViewController.swift */; };
+		EF871C8E1F0F448E008260D5 /* SanFranciscoFont-master in Resources */ = {isa = PBXBuildFile; fileRef = EF871C8D1F0F448E008260D5 /* SanFranciscoFont-master */; };
+		EF871C901F0F45B5008260D5 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF871C8F1F0F45B5008260D5 /* CustomColor.swift */; };
+		EF871C921F0F4814008260D5 /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF871C911F0F4814008260D5 /* LoginSignUpViewController.swift */; };
+		EF8990A31F0C87C300290667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8990A21F0C87C300290667 /* AppDelegate.swift */; };
+		EF8990A81F0C87C300290667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF8990A61F0C87C300290667 /* Main.storyboard */; };
+		EF8990AA1F0C87C300290667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF8990A91F0C87C300290667 /* Assets.xcassets */; };
+		EF8990AD1F0C87C300290667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF8990AB1F0C87C300290667 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EF871C861F0F391B008260D5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EF53C9651F76FB78009A1DB8 /* Chameleon.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EF53C9621F76F817009A1DB8 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
+		EF53C9641F76FB78009A1DB8 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
+		EF5547DA1F12693E00A7F5FE /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		EF5547DC1F126B9300A7F5FE /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		EF5547DF1F126DAE00A7F5FE /* Two.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Two.storyboard; sourceTree = "<group>"; };
+		EF5547E11F126E1000A7F5FE /* LogSignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogSignViewController.swift; sourceTree = "<group>"; };
+		EF5547E41F12760D00A7F5FE /* CustomButtonTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtonTwo.swift; sourceTree = "<group>"; };
+		EF5547E61F127BAB00A7F5FE /* CustomLabelTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabelTwo.swift; sourceTree = "<group>"; };
+		EF5547E81F1280CF00A7F5FE /* LogInViewControllerTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewControllerTwo.swift; sourceTree = "<group>"; };
+		EF5547EA1F12837B00A7F5FE /* CustomTextFieldTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFieldTwo.swift; sourceTree = "<group>"; };
+		EF5547EC1F12858900A7F5FE /* SignUpViewControllerTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTwo.swift; sourceTree = "<group>"; };
+		EF5547EE1F129B9600A7F5FE /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		EF5547F21F12AE8500A7F5FE /* CustomNavigationControllerTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationControllerTwo.swift; sourceTree = "<group>"; };
+		EF5547F71F12BFD400A7F5FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBarMenu.storyboard; sourceTree = "<group>"; };
+		EF5547FB1F12C98500A7F5FE /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		EF5547FD1F12CB2F00A7F5FE /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		EF5547FF1F12CB7E00A7F5FE /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		EF5548011F12CBB100A7F5FE /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
+		EF5548031F12CBD200A7F5FE /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		EF5548061F12CC3200A7F5FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		EF5548081F12CC8700A7F5FE /* Category.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Category.storyboard; sourceTree = "<group>"; };
+		EF55480B1F12CCF100A7F5FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Favorite.storyboard; sourceTree = "<group>"; };
+		EF55480D1F12CD3F00A7F5FE /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		EF5548111F12EE0400A7F5FE /* FeaturedRecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedRecipeTableViewCell.swift; sourceTree = "<group>"; };
+		EF5548131F12F1E500A7F5FE /* LatestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestTableViewCell.swift; sourceTree = "<group>"; };
+		EF5548171F12F9EC00A7F5FE /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF55481C1F13061D00A7F5FE /* HomeTableHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableHeader.xib; sourceTree = "<group>"; };
+		EF55481E1F13080200A7F5FE /* HomeTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableHeaderView.swift; sourceTree = "<group>"; };
+		EF7C7C351F11BF14000DFDC8 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		EF7C7C371F11C3B4000DFDC8 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		EF7C7C391F11C65D000DFDC8 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		EF871C8D1F0F448E008260D5 /* SanFranciscoFont-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SanFranciscoFont-master"; sourceTree = "<group>"; };
+		EF871C8F1F0F45B5008260D5 /* CustomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		EF871C911F0F4814008260D5 /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSignUpViewController.swift; sourceTree = "<group>"; };
+		EF89909F1F0C87C300290667 /* RECIPES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RECIPES.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8990A21F0C87C300290667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF8990A71F0C87C300290667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF8990A91F0C87C300290667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF8990AC1F0C87C300290667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF8990AE1F0C87C300290667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF89909C1F0C87C300290667 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF53C9631F76F817009A1DB8 /* Chameleon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF5547DE1F126D8B00A7F5FE /* Practice2 */ = {
+			isa = PBXGroup;
+			children = (
+				EF5547E31F1275DD00A7F5FE /* Custom */,
+				EF5547E11F126E1000A7F5FE /* LogSignViewController.swift */,
+				EF5547E81F1280CF00A7F5FE /* LogInViewControllerTwo.swift */,
+				EF5547EC1F12858900A7F5FE /* SignUpViewControllerTwo.swift */,
+			);
+			name = Practice2;
+			sourceTree = "<group>";
+		};
+		EF5547E31F1275DD00A7F5FE /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				EF5547DF1F126DAE00A7F5FE /* Two.storyboard */,
+				EF5547E41F12760D00A7F5FE /* CustomButtonTwo.swift */,
+				EF5547E61F127BAB00A7F5FE /* CustomLabelTwo.swift */,
+				EF5547EA1F12837B00A7F5FE /* CustomTextFieldTwo.swift */,
+				EF5547F21F12AE8500A7F5FE /* CustomNavigationControllerTwo.swift */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		EF5547F91F12C11800A7F5FE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EF8990A61F0C87C300290667 /* Main.storyboard */,
+				EF5547F61F12BFD400A7F5FE /* TabBarMenu.storyboard */,
+				EF55480D1F12CD3F00A7F5FE /* Profile.storyboard */,
+				EF55480A1F12CCF100A7F5FE /* Favorite.storyboard */,
+				EF5548081F12CC8700A7F5FE /* Category.storyboard */,
+				EF5548051F12CC3200A7F5FE /* Home.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		EF5547FA1F12C13300A7F5FE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF871C911F0F4814008260D5 /* LoginSignUpViewController.swift */,
+				EF7C7C391F11C65D000DFDC8 /* LogInViewController.swift */,
+				EF5547DC1F126B9300A7F5FE /* SignUpViewController.swift */,
+				EF55480F1F12EAD000A7F5FE /* Home */,
+				EF5547FF1F12CB7E00A7F5FE /* CategoryTableViewController.swift */,
+				EF5548011F12CBB100A7F5FE /* FavoriteTableViewController.swift */,
+				EF5548031F12CBD200A7F5FE /* ProfileTableViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		EF55480F1F12EAD000A7F5FE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EF5547FD1F12CB2F00A7F5FE /* HomeTableViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		EF5548101F12EB1500A7F5FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF55481B1F1305D200A7F5FE /* XIB */,
+				EF5548111F12EE0400A7F5FE /* FeaturedRecipeTableViewCell.swift */,
+				EF5548131F12F1E500A7F5FE /* LatestTableViewCell.swift */,
+				EF5548171F12F9EC00A7F5FE /* FeaturedCollectionViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EF55481B1F1305D200A7F5FE /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				EF55481C1F13061D00A7F5FE /* HomeTableHeader.xib */,
+				EF55481E1F13080200A7F5FE /* HomeTableHeaderView.swift */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+		EF7C7C331F11A96D000DFDC8 /* Practice1 */ = {
+			isa = PBXGroup;
+			children = (
+				EF5548101F12EB1500A7F5FE /* View */,
+				EF5547F91F12C11800A7F5FE /* Storyboard */,
+				EF5547FA1F12C13300A7F5FE /* ViewController */,
+				EF7C7C341F11BEDA000DFDC8 /* Custom */,
+			);
+			name = Practice1;
+			sourceTree = "<group>";
+		};
+		EF7C7C341F11BEDA000DFDC8 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C7C351F11BF14000DFDC8 /* CustomButton.swift */,
+				EF7C7C371F11C3B4000DFDC8 /* CustomLabel.swift */,
+				EF5547DA1F12693E00A7F5FE /* CustomTextField.swift */,
+				EF5547EE1F129B9600A7F5FE /* CustomNavigationController.swift */,
+				EF5547FB1F12C98500A7F5FE /* CustomTabBarController.swift */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		EF871C801F0F390E008260D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF53C9641F76FB78009A1DB8 /* Chameleon.framework */,
+				EF53C9621F76F817009A1DB8 /* Chameleon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF8990961F0C87C300290667 = {
+			isa = PBXGroup;
+			children = (
+				EF8990A11F0C87C300290667 /* RECIPES */,
+				EF8990A01F0C87C300290667 /* Products */,
+				EF871C801F0F390E008260D5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF8990A01F0C87C300290667 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF89909F1F0C87C300290667 /* RECIPES.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF8990A11F0C87C300290667 /* RECIPES */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C7C331F11A96D000DFDC8 /* Practice1 */,
+				EF5547DE1F126D8B00A7F5FE /* Practice2 */,
+				EF8990A21F0C87C300290667 /* AppDelegate.swift */,
+				EF8990A91F0C87C300290667 /* Assets.xcassets */,
+				EF8990AB1F0C87C300290667 /* LaunchScreen.storyboard */,
+				EF8990AE1F0C87C300290667 /* Info.plist */,
+				EF871C8D1F0F448E008260D5 /* SanFranciscoFont-master */,
+				EF871C8F1F0F45B5008260D5 /* CustomColor.swift */,
+			);
+			path = RECIPES;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF89909E1F0C87C300290667 /* RECIPES */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF8990B11F0C87C300290667 /* Build configuration list for PBXNativeTarget "RECIPES" */;
+			buildPhases = (
+				EF89909B1F0C87C300290667 /* Sources */,
+				EF89909C1F0C87C300290667 /* Frameworks */,
+				EF89909D1F0C87C300290667 /* Resources */,
+				EF871C861F0F391B008260D5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RECIPES;
+			productName = FLAVR;
+			productReference = EF89909F1F0C87C300290667 /* RECIPES.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF8990971F0C87C300290667 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Chilly Bean";
+				TargetAttributes = {
+					EF89909E1F0C87C300290667 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8V82X98L5Q;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EF89909A1F0C87C300290667 /* Build configuration list for PBXProject "RECIPES" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF8990961F0C87C300290667;
+			productRefGroup = EF8990A01F0C87C300290667 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF89909E1F0C87C300290667 /* RECIPES */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF89909D1F0C87C300290667 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5548091F12CC8700A7F5FE /* Category.storyboard in Resources */,
+				EF5548071F12CC3200A7F5FE /* Home.storyboard in Resources */,
+				EF55480E1F12CD3F00A7F5FE /* Profile.storyboard in Resources */,
+				EF55481D1F13061D00A7F5FE /* HomeTableHeader.xib in Resources */,
+				EF8990AD1F0C87C300290667 /* LaunchScreen.storyboard in Resources */,
+				EF871C8E1F0F448E008260D5 /* SanFranciscoFont-master in Resources */,
+				EF5547E01F126DAE00A7F5FE /* Two.storyboard in Resources */,
+				EF55480C1F12CCF100A7F5FE /* Favorite.storyboard in Resources */,
+				EF8990AA1F0C87C300290667 /* Assets.xcassets in Resources */,
+				EF8990A81F0C87C300290667 /* Main.storyboard in Resources */,
+				EF5547F81F12BFD400A7F5FE /* TabBarMenu.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF89909B1F0C87C300290667 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5548041F12CBD200A7F5FE /* ProfileTableViewController.swift in Sources */,
+				EF5547DB1F12693E00A7F5FE /* CustomTextField.swift in Sources */,
+				EF5547E51F12760D00A7F5FE /* CustomButtonTwo.swift in Sources */,
+				EF5547E71F127BAB00A7F5FE /* CustomLabelTwo.swift in Sources */,
+				EF5547E21F126E1000A7F5FE /* LogSignViewController.swift in Sources */,
+				EF7C7C361F11BF14000DFDC8 /* CustomButton.swift in Sources */,
+				EF5548021F12CBB100A7F5FE /* FavoriteTableViewController.swift in Sources */,
+				EF5548121F12EE0400A7F5FE /* FeaturedRecipeTableViewCell.swift in Sources */,
+				EF5548001F12CB7E00A7F5FE /* CategoryTableViewController.swift in Sources */,
+				EF5547E91F1280CF00A7F5FE /* LogInViewControllerTwo.swift in Sources */,
+				EF5547FE1F12CB2F00A7F5FE /* HomeTableViewController.swift in Sources */,
+				EF5547EF1F129B9600A7F5FE /* CustomNavigationController.swift in Sources */,
+				EF55481F1F13080200A7F5FE /* HomeTableHeaderView.swift in Sources */,
+				EF5547EB1F12837B00A7F5FE /* CustomTextFieldTwo.swift in Sources */,
+				EF5547DD1F126B9300A7F5FE /* SignUpViewController.swift in Sources */,
+				EF7C7C381F11C3B4000DFDC8 /* CustomLabel.swift in Sources */,
+				EF7C7C3A1F11C65D000DFDC8 /* LogInViewController.swift in Sources */,
+				EF8990A31F0C87C300290667 /* AppDelegate.swift in Sources */,
+				EF5548141F12F1E500A7F5FE /* LatestTableViewCell.swift in Sources */,
+				EF5547FC1F12C98500A7F5FE /* CustomTabBarController.swift in Sources */,
+				EF871C921F0F4814008260D5 /* LoginSignUpViewController.swift in Sources */,
+				EF5548181F12F9EC00A7F5FE /* FeaturedCollectionViewCell.swift in Sources */,
+				EF871C901F0F45B5008260D5 /* CustomColor.swift in Sources */,
+				EF5547ED1F12858900A7F5FE /* SignUpViewControllerTwo.swift in Sources */,
+				EF5547F31F12AE8500A7F5FE /* CustomNavigationControllerTwo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF5547F61F12BFD400A7F5FE /* TabBarMenu.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF5547F71F12BFD400A7F5FE /* Base */,
+			);
+			name = TabBarMenu.storyboard;
+			sourceTree = "<group>";
+		};
+		EF5548051F12CC3200A7F5FE /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF5548061F12CC3200A7F5FE /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		EF55480A1F12CCF100A7F5FE /* Favorite.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF55480B1F12CCF100A7F5FE /* Base */,
+			);
+			name = Favorite.storyboard;
+			sourceTree = "<group>";
+		};
+		EF8990A61F0C87C300290667 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF8990A71F0C87C300290667 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF8990AB1F0C87C300290667 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF8990AC1F0C87C300290667 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF8990AF1F0C87C300290667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF8990B01F0C87C300290667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF8990B21F0C87C300290667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8V82X98L5Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RECIPES/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.chidiemeh184.RECIPES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		EF8990B31F0C87C300290667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8V82X98L5Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RECIPES/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.chidiemeh184.RECIPES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF89909A1F0C87C300290667 /* Build configuration list for PBXProject "RECIPES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF8990AF1F0C87C300290667 /* Debug */,
+				EF8990B01F0C87C300290667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF8990B11F0C87C300290667 /* Build configuration list for PBXNativeTarget "RECIPES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF8990B21F0C87C300290667 /* Debug */,
+				EF8990B31F0C87C300290667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF8990971F0C87C300290667 /* Project object */;
+}
