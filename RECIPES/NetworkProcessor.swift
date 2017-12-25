@@ -11,6 +11,7 @@ import Foundation
 
 class NetworkProcessor {
     
-    
+    lazy var configuraiton = URLSessionConfiguration.default
+    lazy var session = URLSession(configuration: configuraiton)
     
 }
