@@ -45,6 +45,7 @@
 		EF8990A81F0C87C300290667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF8990A61F0C87C300290667 /* Main.storyboard */; };
 		EF8990AA1F0C87C300290667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF8990A91F0C87C300290667 /* Assets.xcassets */; };
 		EF8990AD1F0C87C300290667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF8990AB1F0C87C300290667 /* LaunchScreen.storyboard */; };
+		EFE516E11F79BB7E00CC666F /* StartStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE516E01F79BB7E00CC666F /* StartStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -102,6 +103,10 @@
 		EF8990A91F0C87C300290667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF8990AC1F0C87C300290667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF8990AE1F0C87C300290667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE516E01F79BB7E00CC666F /* StartStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartStoryboard.storyboard; sourceTree = "<group>"; };
+		EFE516E31F79C11900CC666F /* home-icon@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-icon@1x.png"; sourceTree = "<group>"; };
+		EFE516E41F79C11A00CC666F /* home-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-icon@3x.png"; sourceTree = "<group>"; };
+		EFE516E51F79C11A00CC666F /* home-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +124,7 @@
 		EF5547DE1F126D8B00A7F5FE /* Practice2 */ = {
 			isa = PBXGroup;
 			children = (
+				EFE516DF1F79BB4C00CC666F /* StoryBoard */,
 				EF5547E31F1275DD00A7F5FE /* Custom */,
 				EF5547E11F126E1000A7F5FE /* LogSignViewController.swift */,
 				EF5547E81F1280CF00A7F5FE /* LogInViewControllerTwo.swift */,
@@ -217,6 +223,20 @@
 			name = Custom;
 			sourceTree = "<group>";
 		};
+		EF7F1F0A1FF0E29E00C8E853 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EF7F1F0B1FF0E2B000C8E853 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		EF871C801F0F390E008260D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +268,8 @@
 			children = (
 				EF7C7C331F11A96D000DFDC8 /* Practice1 */,
 				EF5547DE1F126D8B00A7F5FE /* Practice2 */,
+				EF7F1F0A1FF0E29E00C8E853 /* Models */,
+				EF7F1F0B1FF0E2B000C8E853 /* Network */,
 				EF8990A21F0C87C300290667 /* AppDelegate.swift */,
 				EF8990A91F0C87C300290667 /* Assets.xcassets */,
 				EF8990AB1F0C87C300290667 /* LaunchScreen.storyboard */,
@@ -256,6 +278,17 @@
 				EF871C8F1F0F45B5008260D5 /* CustomColor.swift */,
 			);
 			path = RECIPES;
+			sourceTree = "<group>";
+		};
+		EFE516DF1F79BB4C00CC666F /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				EFE516E31F79C11900CC666F /* home-icon@1x.png */,
+				EFE516E51F79C11A00CC666F /* home-icon@2x.png */,
+				EFE516E41F79C11A00CC666F /* home-icon@3x.png */,
+				EFE516E01F79BB7E00CC666F /* StartStoryboard.storyboard */,
+			);
+			name = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +357,7 @@
 				EF5548071F12CC3200A7F5FE /* Home.storyboard in Resources */,
 				EF55480E1F12CD3F00A7F5FE /* Profile.storyboard in Resources */,
 				EF55481D1F13061D00A7F5FE /* HomeTableHeader.xib in Resources */,
+				EFE516E11F79BB7E00CC666F /* StartStoryboard.storyboard in Resources */,
 				EF8990AD1F0C87C300290667 /* LaunchScreen.storyboard in Resources */,
 				EF871C8E1F0F448E008260D5 /* SanFranciscoFont-master in Resources */,
 				EF5547E01F126DAE00A7F5FE /* Two.storyboard in Resources */,
