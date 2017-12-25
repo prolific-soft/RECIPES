@@ -137,6 +137,7 @@
 				EF5547E11F126E1000A7F5FE /* LogSignViewController.swift */,
 				EF5547E81F1280CF00A7F5FE /* LogInViewControllerTwo.swift */,
 				EF5547EC1F12858900A7F5FE /* SignUpViewControllerTwo.swift */,
+				EF871C8F1F0F45B5008260D5 /* CustomColor.swift */,
 			);
 			name = Practice2;
 			sourceTree = "<group>";
@@ -295,7 +296,6 @@
 				EF8990AB1F0C87C300290667 /* LaunchScreen.storyboard */,
 				EF8990AE1F0C87C300290667 /* Info.plist */,
 				EF871C8D1F0F448E008260D5 /* SanFranciscoFont-master */,
-				EF871C8F1F0F45B5008260D5 /* CustomColor.swift */,
 			);
 			path = RECIPES;
 			sourceTree = "<group>";
