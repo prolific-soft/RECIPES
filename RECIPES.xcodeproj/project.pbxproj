@@ -38,6 +38,10 @@
 		EF7C7C361F11BF14000DFDC8 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C7C351F11BF14000DFDC8 /* CustomButton.swift */; };
 		EF7C7C381F11C3B4000DFDC8 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C7C371F11C3B4000DFDC8 /* CustomLabel.swift */; };
 		EF7C7C3A1F11C65D000DFDC8 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C7C391F11C65D000DFDC8 /* LogInViewController.swift */; };
+		EF7F1F0E1FF0E5DC00C8E853 /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7F1F0D1FF0E5DC00C8E853 /* NetworkProcessor.swift */; };
+		EF7F1F101FF0E5FA00C8E853 /* RecipeAPIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7F1F0F1FF0E5FA00C8E853 /* RecipeAPIServices.swift */; };
+		EF7F1F121FF0E65600C8E853 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7F1F111FF0E65600C8E853 /* Recipe.swift */; };
+		EF7F1F141FF0E67E00C8E853 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7F1F131FF0E67E00C8E853 /* Recipes.swift */; };
 		EF871C8E1F0F448E008260D5 /* SanFranciscoFont-master in Resources */ = {isa = PBXBuildFile; fileRef = EF871C8D1F0F448E008260D5 /* SanFranciscoFont-master */; };
 		EF871C901F0F45B5008260D5 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF871C8F1F0F45B5008260D5 /* CustomColor.swift */; };
 		EF871C921F0F4814008260D5 /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF871C911F0F4814008260D5 /* LoginSignUpViewController.swift */; };
@@ -94,6 +98,10 @@
 		EF7C7C351F11BF14000DFDC8 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		EF7C7C371F11C3B4000DFDC8 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		EF7C7C391F11C65D000DFDC8 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		EF7F1F0D1FF0E5DC00C8E853 /* NetworkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
+		EF7F1F0F1FF0E5FA00C8E853 /* RecipeAPIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAPIServices.swift; sourceTree = "<group>"; };
+		EF7F1F111FF0E65600C8E853 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		EF7F1F131FF0E67E00C8E853 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
 		EF871C8D1F0F448E008260D5 /* SanFranciscoFont-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SanFranciscoFont-master"; sourceTree = "<group>"; };
 		EF871C8F1F0F45B5008260D5 /* CustomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		EF871C911F0F4814008260D5 /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSignUpViewController.swift; sourceTree = "<group>"; };
@@ -226,6 +234,7 @@
 		EF7F1F0A1FF0E29E00C8E853 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EF7F1F0C1FF0E5AB00C8E853 /* API */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -233,8 +242,19 @@
 		EF7F1F0B1FF0E2B000C8E853 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				EF7F1F0D1FF0E5DC00C8E853 /* NetworkProcessor.swift */,
+				EF7F1F0F1FF0E5FA00C8E853 /* RecipeAPIServices.swift */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		EF7F1F0C1FF0E5AB00C8E853 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F1F111FF0E65600C8E853 /* Recipe.swift */,
+				EF7F1F131FF0E67E00C8E853 /* Recipes.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 		EF871C801F0F390E008260D5 /* Frameworks */ = {
@@ -376,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF5548041F12CBD200A7F5FE /* ProfileTableViewController.swift in Sources */,
+				EF7F1F0E1FF0E5DC00C8E853 /* NetworkProcessor.swift in Sources */,
 				EF5547DB1F12693E00A7F5FE /* CustomTextField.swift in Sources */,
 				EF5547E51F12760D00A7F5FE /* CustomButtonTwo.swift in Sources */,
 				EF5547E71F127BAB00A7F5FE /* CustomLabelTwo.swift in Sources */,
@@ -389,13 +410,16 @@
 				EF5547EF1F129B9600A7F5FE /* CustomNavigationController.swift in Sources */,
 				EF55481F1F13080200A7F5FE /* HomeTableHeaderView.swift in Sources */,
 				EF5547EB1F12837B00A7F5FE /* CustomTextFieldTwo.swift in Sources */,
+				EF7F1F141FF0E67E00C8E853 /* Recipes.swift in Sources */,
 				EF5547DD1F126B9300A7F5FE /* SignUpViewController.swift in Sources */,
 				EF7C7C381F11C3B4000DFDC8 /* CustomLabel.swift in Sources */,
 				EF7C7C3A1F11C65D000DFDC8 /* LogInViewController.swift in Sources */,
+				EF7F1F101FF0E5FA00C8E853 /* RecipeAPIServices.swift in Sources */,
 				EF8990A31F0C87C300290667 /* AppDelegate.swift in Sources */,
 				EF5548141F12F1E500A7F5FE /* LatestTableViewCell.swift in Sources */,
 				EF5547FC1F12C98500A7F5FE /* CustomTabBarController.swift in Sources */,
 				EF871C921F0F4814008260D5 /* LoginSignUpViewController.swift in Sources */,
+				EF7F1F121FF0E65600C8E853 /* Recipe.swift in Sources */,
 				EF5548181F12F9EC00A7F5FE /* FeaturedCollectionViewCell.swift in Sources */,
 				EF871C901F0F45B5008260D5 /* CustomColor.swift in Sources */,
 				EF5547ED1F12858900A7F5FE /* SignUpViewControllerTwo.swift in Sources */,
