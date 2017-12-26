@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF1DF4D01FF2C6240091C25D /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = EF1DF4CF1FF2C6240091C25D /* response.json */; };
 		EF53C9631F76F817009A1DB8 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF53C9621F76F817009A1DB8 /* Chameleon.framework */; };
 		EF53C9651F76FB78009A1DB8 /* Chameleon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF53C9641F76FB78009A1DB8 /* Chameleon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EF5547DB1F12693E00A7F5FE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5547DA1F12693E00A7F5FE /* CustomTextField.swift */; };
@@ -50,6 +51,7 @@
 		EF8990A81F0C87C300290667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF8990A61F0C87C300290667 /* Main.storyboard */; };
 		EF8990AA1F0C87C300290667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF8990A91F0C87C300290667 /* Assets.xcassets */; };
 		EF8990AD1F0C87C300290667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF8990AB1F0C87C300290667 /* LaunchScreen.storyboard */; };
+		EFC25ACC1FF2B11700970981 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC25ACB1FF2B11700970981 /* Extension.swift */; };
 		EFE516E11F79BB7E00CC666F /* StartStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE516E01F79BB7E00CC666F /* StartStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EF1DF4CF1FF2C6240091C25D /* response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
 		EF53C9621F76F817009A1DB8 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		EF53C9641F76FB78009A1DB8 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		EF5547DA1F12693E00A7F5FE /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -113,6 +116,7 @@
 		EF8990A91F0C87C300290667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF8990AC1F0C87C300290667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF8990AE1F0C87C300290667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFC25ACB1FF2B11700970981 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		EFE516E01F79BB7E00CC666F /* StartStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartStoryboard.storyboard; sourceTree = "<group>"; };
 		EFE516E31F79C11900CC666F /* home-icon@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-icon@1x.png"; sourceTree = "<group>"; };
 		EFE516E41F79C11A00CC666F /* home-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-icon@3x.png"; sourceTree = "<group>"; };
@@ -131,6 +135,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF1DF4CA1FF2BE9D0091C25D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EF55481B1F1305D200A7F5FE /* XIB */,
+				EF5547FD1F12CB2F00A7F5FE /* HomeTableViewController.swift */,
+				EF5548171F12F9EC00A7F5FE /* FeaturedCollectionViewCell.swift */,
+				EF5548131F12F1E500A7F5FE /* LatestTableViewCell.swift */,
+				EF5548111F12EE0400A7F5FE /* FeaturedRecipeTableViewCell.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		EF1DF4CB1FF2C0840091C25D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EF5547FF1F12CB7E00A7F5FE /* CategoryTableViewController.swift */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		EF1DF4CC1FF2C09C0091C25D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EF5548031F12CBD200A7F5FE /* ProfileTableViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		EF1DF4CD1FF2C0AB0091C25D /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				EF5548011F12CBB100A7F5FE /* FavoriteTableViewController.swift */,
+			);
+			name = Favorite;
+			sourceTree = "<group>";
+		};
+		EF1DF4CE1FF2C3610091C25D /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				EF1DF4CF1FF2C6240091C25D /* response.json */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
 		EF5547DE1F126D8B00A7F5FE /* Practice2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,38 +217,15 @@
 			name = Storyboard;
 			sourceTree = "<group>";
 		};
-		EF5547FA1F12C13300A7F5FE /* ViewController */ = {
+		EF5547FA1F12C13300A7F5FE /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				EF871C911F0F4814008260D5 /* LoginSignUpViewController.swift */,
 				EF7C7C391F11C65D000DFDC8 /* LogInViewController.swift */,
 				EF5547DC1F126B9300A7F5FE /* SignUpViewController.swift */,
-				EF55480F1F12EAD000A7F5FE /* Home */,
-				EF5547FF1F12CB7E00A7F5FE /* CategoryTableViewController.swift */,
-				EF5548011F12CBB100A7F5FE /* FavoriteTableViewController.swift */,
-				EF5548031F12CBD200A7F5FE /* ProfileTableViewController.swift */,
 				EF7F1F171FF16D4E00C8E853 /* TestViewController.swift */,
 			);
-			name = ViewController;
-			sourceTree = "<group>";
-		};
-		EF55480F1F12EAD000A7F5FE /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				EF5547FD1F12CB2F00A7F5FE /* HomeTableViewController.swift */,
-			);
-			name = Home;
-			sourceTree = "<group>";
-		};
-		EF5548101F12EB1500A7F5FE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				EF55481B1F1305D200A7F5FE /* XIB */,
-				EF5548111F12EE0400A7F5FE /* FeaturedRecipeTableViewCell.swift */,
-				EF5548131F12F1E500A7F5FE /* LatestTableViewCell.swift */,
-				EF5548171F12F9EC00A7F5FE /* FeaturedCollectionViewCell.swift */,
-			);
-			name = View;
+			name = Main;
 			sourceTree = "<group>";
 		};
 		EF55481B1F1305D200A7F5FE /* XIB */ = {
@@ -215,9 +240,12 @@
 		EF7C7C331F11A96D000DFDC8 /* Practice1 */ = {
 			isa = PBXGroup;
 			children = (
-				EF5548101F12EB1500A7F5FE /* View */,
 				EF5547F91F12C11800A7F5FE /* Storyboard */,
-				EF5547FA1F12C13300A7F5FE /* ViewController */,
+				EF5547FA1F12C13300A7F5FE /* Main */,
+				EF1DF4CC1FF2C09C0091C25D /* Profile */,
+				EF1DF4CD1FF2C0AB0091C25D /* Favorite */,
+				EF1DF4CB1FF2C0840091C25D /* Category */,
+				EF1DF4CA1FF2BE9D0091C25D /* Home */,
 				EF7C7C341F11BEDA000DFDC8 /* Custom */,
 			);
 			name = Practice1;
@@ -226,6 +254,7 @@
 		EF7C7C341F11BEDA000DFDC8 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				EFC25ACA1FF2B0DF00970981 /* Extension */,
 				EF7C7C351F11BF14000DFDC8 /* CustomButton.swift */,
 				EF7C7C371F11C3B4000DFDC8 /* CustomLabel.swift */,
 				EF5547DA1F12693E00A7F5FE /* CustomTextField.swift */,
@@ -238,6 +267,7 @@
 		EF7F1F0A1FF0E29E00C8E853 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EF1DF4CE1FF2C3610091C25D /* JSON */,
 				EF7F1F0C1FF0E5AB00C8E853 /* API */,
 			);
 			name = Models;
@@ -291,7 +321,6 @@
 			isa = PBXGroup;
 			children = (
 				EF7C7C331F11A96D000DFDC8 /* Practice1 */,
-				EF5547DE1F126D8B00A7F5FE /* Practice2 */,
 				EF7F1F0A1FF0E29E00C8E853 /* Models */,
 				EF7F1F0B1FF0E2B000C8E853 /* Network */,
 				EF8990A21F0C87C300290667 /* AppDelegate.swift */,
@@ -299,8 +328,17 @@
 				EF8990AB1F0C87C300290667 /* LaunchScreen.storyboard */,
 				EF8990AE1F0C87C300290667 /* Info.plist */,
 				EF871C8D1F0F448E008260D5 /* SanFranciscoFont-master */,
+				EF5547DE1F126D8B00A7F5FE /* Practice2 */,
 			);
 			path = RECIPES;
+			sourceTree = "<group>";
+		};
+		EFC25ACA1FF2B0DF00970981 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EFC25ACB1FF2B11700970981 /* Extension.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		EFE516DF1F79BB4C00CC666F /* StoryBoard */ = {
@@ -387,6 +425,7 @@
 				EF55480C1F12CCF100A7F5FE /* Favorite.storyboard in Resources */,
 				EF8990AA1F0C87C300290667 /* Assets.xcassets in Resources */,
 				EF8990A81F0C87C300290667 /* Main.storyboard in Resources */,
+				EF1DF4D01FF2C6240091C25D /* response.json in Resources */,
 				EF5547F81F12BFD400A7F5FE /* TabBarMenu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +444,7 @@
 				EF5547E71F127BAB00A7F5FE /* CustomLabelTwo.swift in Sources */,
 				EF5547E21F126E1000A7F5FE /* LogSignViewController.swift in Sources */,
 				EF7C7C361F11BF14000DFDC8 /* CustomButton.swift in Sources */,
+				EFC25ACC1FF2B11700970981 /* Extension.swift in Sources */,
 				EF5548021F12CBB100A7F5FE /* FavoriteTableViewController.swift in Sources */,
 				EF5548121F12EE0400A7F5FE /* FeaturedRecipeTableViewCell.swift in Sources */,
 				EF5548001F12CB7E00A7F5FE /* CategoryTableViewController.swift in Sources */,
