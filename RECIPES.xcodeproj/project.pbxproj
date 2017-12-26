@@ -42,6 +42,7 @@
 		EF7F1F101FF0E5FA00C8E853 /* RecipeAPIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7F1F0F1FF0E5FA00C8E853 /* RecipeAPIServices.swift */; };
 		EF7F1F121FF0E65600C8E853 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7F1F111FF0E65600C8E853 /* Recipe.swift */; };
 		EF7F1F141FF0E67E00C8E853 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7F1F131FF0E67E00C8E853 /* Recipes.swift */; };
+		EF7F1F181FF16D4E00C8E853 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7F1F171FF16D4E00C8E853 /* TestViewController.swift */; };
 		EF871C8E1F0F448E008260D5 /* SanFranciscoFont-master in Resources */ = {isa = PBXBuildFile; fileRef = EF871C8D1F0F448E008260D5 /* SanFranciscoFont-master */; };
 		EF871C901F0F45B5008260D5 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF871C8F1F0F45B5008260D5 /* CustomColor.swift */; };
 		EF871C921F0F4814008260D5 /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF871C911F0F4814008260D5 /* LoginSignUpViewController.swift */; };
@@ -102,6 +103,7 @@
 		EF7F1F0F1FF0E5FA00C8E853 /* RecipeAPIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAPIServices.swift; sourceTree = "<group>"; };
 		EF7F1F111FF0E65600C8E853 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		EF7F1F131FF0E67E00C8E853 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		EF7F1F171FF16D4E00C8E853 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		EF871C8D1F0F448E008260D5 /* SanFranciscoFont-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SanFranciscoFont-master"; sourceTree = "<group>"; };
 		EF871C8F1F0F45B5008260D5 /* CustomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		EF871C911F0F4814008260D5 /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSignUpViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				EF5547FF1F12CB7E00A7F5FE /* CategoryTableViewController.swift */,
 				EF5548011F12CBB100A7F5FE /* FavoriteTableViewController.swift */,
 				EF5548031F12CBD200A7F5FE /* ProfileTableViewController.swift */,
+				EF7F1F171FF16D4E00C8E853 /* TestViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				EF5548021F12CBB100A7F5FE /* FavoriteTableViewController.swift in Sources */,
 				EF5548121F12EE0400A7F5FE /* FeaturedRecipeTableViewCell.swift in Sources */,
 				EF5548001F12CB7E00A7F5FE /* CategoryTableViewController.swift in Sources */,
+				EF7F1F181FF16D4E00C8E853 /* TestViewController.swift in Sources */,
 				EF5547E91F1280CF00A7F5FE /* LogInViewControllerTwo.swift in Sources */,
 				EF5547FE1F12CB2F00A7F5FE /* HomeTableViewController.swift in Sources */,
 				EF5547EF1F129B9600A7F5FE /* CustomNavigationController.swift in Sources */,

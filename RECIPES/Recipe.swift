@@ -45,7 +45,7 @@ struct Recipe : Codable {
             var unitShort : String?
             var unitLong : String?
             var originalString : String?
-            var metaInformation : [Any]?
+            var metaInformation : [String]? //Any
         }
     
     var extendedIngredients : [ExtendedIngredients]?
@@ -54,10 +54,10 @@ struct Recipe : Codable {
     var readyInMinutes : Int
     var image : String?
     var imageType : String?
-    var cuisines : [Any]?
+    var cuisines : [String]?  //Any
     var dishTypes : [String]?
     var diets : [String]?
-    var occasions : [Any]?
+    var occasions : [String]? //Any
     
         struct WinePairing: Codable {
             var pairedWines : [String]?
@@ -78,32 +78,32 @@ struct Recipe : Codable {
     var winePairing : WinePairing?
     var instructions : String?
     
-        struct analyzedInstructions : Codable {
+        struct AnalyzedInstructions : Codable {
             var name : String?
              struct Steps : Codable {
                     var number : Int?
                     var step : String?
                     
-                        struct ingredients : Codable {
+                        struct Ingredients : Codable {
                             var id : Int?
                             var name : String?
                             var image : String?
                         }
                     
-                    var ingredients : [ingredients]?
+                    var ingredients : [Ingredients]?
                     
-                    struct equipment : Codable {
+                    struct Equipment : Codable {
                             var id : Int?
                             var name : String?
                             var image : String?
                         }
                     
-                    var equipment : [equipment]?
+                    var equipment : [Equipment]?
                 }
             var steps : [Steps]?
         }
     
-    var analyzedInstructions : [analyzedInstructions]?
+    var analyzedInstructions : [AnalyzedInstructions]?
 }
 
 
