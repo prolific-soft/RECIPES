@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -73,72 +75,126 @@
                                     <outlet property="featuredCollectionView" destination="Bec-b3-DTY" id="28t-fM-bcr"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LatestRecipeCell" rowHeight="285" id="CwY-va-G19" customClass="LatestTableViewCell" customModule="RECIPES" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="200" width="375" height="285"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LatestRecipeCell" rowHeight="290" id="CwY-va-G19" customClass="LatestTableViewCell" customModule="RECIPES" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="200" width="375" height="290"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CwY-va-G19" id="zNj-gy-b63">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="285"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rAW-SX-1WY">
-                                            <rect key="frame" x="16" y="31" width="344" height="243"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAW-SX-1WY">
+                                            <rect key="frame" x="16" y="31" width="344" height="248"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="salad" translatesAutoresizingMaskIntoConstraints="NO" id="6dB-Dk-VFd">
-                                                    <rect key="frame" x="0.0" y="0.0" width="344" height="134"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="salad" translatesAutoresizingMaskIntoConstraints="NO" id="6dB-Dk-VFd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="344" height="137"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="6dB-Dk-VFd" secondAttribute="height" multiplier="344:137" id="i5T-es-rEe"/>
+                                                        <constraint firstAttribute="height" constant="137" id="zWS-6B-ru7"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HEALTHY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1z-9D-9jD">
-                                                    <rect key="frame" x="8" y="143" width="328" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="11"/>
-                                                    <color key="textColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30 minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bK-Gc-bRq">
-                                                    <rect key="frame" x="38" y="201" width="74" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="13"/>
-                                                    <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pasta Salad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEB-E1-l7E">
-                                                    <rect key="frame" x="8" y="169" width="336" height="26"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
-                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="vug-SC-PgL">
-                                                    <rect key="frame" x="14" y="205.5" width="16" height="16"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Easy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2X-H6-iBu">
-                                                    <rect key="frame" x="155" y="201" width="74" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="13"/>
-                                                    <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hot Clothing" translatesAutoresizingMaskIntoConstraints="NO" id="Q02-rJ-5LW">
-                                                    <rect key="frame" x="133" y="207.5" width="14" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7 People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shj-1B-JrT">
-                                                    <rect key="frame" x="251" y="200" width="74" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="13"/>
-                                                    <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Food" translatesAutoresizingMaskIntoConstraints="NO" id="O9v-rA-FdU">
-                                                    <rect key="frame" x="229" y="204" width="16" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RDS-CT-HMG">
+                                                    <rect key="frame" x="8" y="149" width="317" height="76"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="ZM2-eh-C9X">
+                                                            <rect key="frame" x="0.0" y="0.0" width="84.5" height="40"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEALTHY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1z-9D-9jD">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="84.5" height="13.5"/>
+                                                                    <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="11"/>
+                                                                    <color key="textColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pasta Salad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEB-E1-l7E">
+                                                                    <rect key="frame" x="0.0" y="20.5" width="84.5" height="19.5"/>
+                                                                    <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
+                                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="CSF-Az-oCS">
+                                                            <rect key="frame" x="0.0" y="60" width="317" height="16"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="D58-rm-Hab">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="91" height="16"/>
+                                                                    <subviews>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="vug-SC-PgL">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="16" id="1bx-R4-jnV"/>
+                                                                                <constraint firstAttribute="width" secondItem="vug-SC-PgL" secondAttribute="height" multiplier="1:1" id="Dlt-Zu-5cp"/>
+                                                                                <constraint firstAttribute="height" constant="16" id="MlM-ga-Wkd"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bK-Gc-bRq">
+                                                                            <rect key="frame" x="24" y="0.0" width="67" height="16"/>
+                                                                            <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="13"/>
+                                                                            <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="phq-x4-yBc">
+                                                                    <rect key="frame" x="141" y="0.0" width="52" height="16"/>
+                                                                    <subviews>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hot Clothing" translatesAutoresizingMaskIntoConstraints="NO" id="Q02-rJ-5LW">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" secondItem="Q02-rJ-5LW" secondAttribute="height" multiplier="1:1" id="6UQ-Ae-MNB"/>
+                                                                                <constraint firstAttribute="height" constant="16" id="BxD-Vk-nzZ"/>
+                                                                                <constraint firstAttribute="width" constant="16" id="N9N-eP-rqG"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Easy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2X-H6-iBu">
+                                                                            <rect key="frame" x="24" y="0.0" width="28" height="16"/>
+                                                                            <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="13"/>
+                                                                            <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="m4b-DG-IBL">
+                                                                    <rect key="frame" x="243" y="0.0" width="74" height="16"/>
+                                                                    <subviews>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Food" translatesAutoresizingMaskIntoConstraints="NO" id="O9v-rA-FdU">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" secondItem="O9v-rA-FdU" secondAttribute="height" multiplier="1:1" id="SgF-bG-v1u"/>
+                                                                                <constraint firstAttribute="height" constant="16" id="ehV-EX-lge"/>
+                                                                                <constraint firstAttribute="width" constant="16" id="iF1-PP-Mik"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shj-1B-JrT">
+                                                                            <rect key="frame" x="24" y="0.0" width="50" height="16"/>
+                                                                            <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="13"/>
+                                                                            <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="6dB-Dk-VFd" firstAttribute="leading" secondItem="rAW-SX-1WY" secondAttribute="leading" id="3xZ-Pf-hgZ"/>
+                                                <constraint firstItem="6dB-Dk-VFd" firstAttribute="top" secondItem="rAW-SX-1WY" secondAttribute="top" id="I3r-ze-q5K"/>
+                                                <constraint firstAttribute="trailing" secondItem="6dB-Dk-VFd" secondAttribute="trailing" id="QLf-s8-IXJ"/>
+                                                <constraint firstItem="RDS-CT-HMG" firstAttribute="top" secondItem="6dB-Dk-VFd" secondAttribute="bottom" constant="12" id="RsH-ky-fWL"/>
+                                                <constraint firstAttribute="trailing" secondItem="RDS-CT-HMG" secondAttribute="trailing" constant="19" id="k15-Kn-8DX"/>
+                                                <constraint firstAttribute="bottom" secondItem="RDS-CT-HMG" secondAttribute="bottom" constant="23" id="kVo-Zo-d15"/>
+                                                <constraint firstItem="RDS-CT-HMG" firstAttribute="leading" secondItem="rAW-SX-1WY" secondAttribute="leading" constant="8" id="sqK-re-bcD"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="rAW-SX-1WY" firstAttribute="leading" secondItem="zNj-gy-b63" secondAttribute="leading" constant="16" id="0Re-of-6zr"/>
+                                        <constraint firstAttribute="trailing" secondItem="rAW-SX-1WY" secondAttribute="trailing" constant="15" id="a9R-9Y-3Vi"/>
+                                        <constraint firstItem="rAW-SX-1WY" firstAttribute="top" secondItem="zNj-gy-b63" secondAttribute="top" constant="31" id="eGM-bf-4Ne"/>
+                                        <constraint firstAttribute="bottom" secondItem="rAW-SX-1WY" secondAttribute="bottom" constant="11" id="weq-N5-hBa"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
