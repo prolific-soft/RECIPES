@@ -16,8 +16,15 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="VIp-0J-I7T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="selectedImageTintColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="fm7-kL-mWK" kind="relationship" relationship="viewControllers" id="AXO-ox-zNP"/>
@@ -44,7 +51,7 @@
         <scene sceneID="StU-FD-dyV">
             <objects>
                 <viewControllerPlaceholder storyboardName="Category" referencedIdentifier="NavigationCategory" id="qGB-TX-2tU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ba0-DP-Bbp"/>
+                    <tabBarItem key="tabBarItem" title="item" id="ba0-DP-Bbp"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="asy-3W-91d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

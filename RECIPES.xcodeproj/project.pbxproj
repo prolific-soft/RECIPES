@@ -118,9 +118,6 @@
 		EF8990AE1F0C87C300290667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFC25ACB1FF2B11700970981 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		EFE516E01F79BB7E00CC666F /* StartStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartStoryboard.storyboard; sourceTree = "<group>"; };
-		EFE516E31F79C11900CC666F /* home-icon@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-icon@1x.png"; sourceTree = "<group>"; };
-		EFE516E41F79C11A00CC666F /* home-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-icon@3x.png"; sourceTree = "<group>"; };
-		EFE516E51F79C11A00CC666F /* home-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,9 +341,6 @@
 		EFE516DF1F79BB4C00CC666F /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				EFE516E31F79C11900CC666F /* home-icon@1x.png */,
-				EFE516E51F79C11A00CC666F /* home-icon@2x.png */,
-				EFE516E41F79C11A00CC666F /* home-icon@3x.png */,
 				EFE516E01F79BB7E00CC666F /* StartStoryboard.storyboard */,
 			);
 			name = StoryBoard;

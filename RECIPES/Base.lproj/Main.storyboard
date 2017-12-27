@@ -203,7 +203,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="WAx-IG-Pea">
-                        <barButtonItem key="leftBarButtonItem" image="ic_arrow_back" id="Doy-Ge-nU0">
+                        <barButtonItem key="leftBarButtonItem" image="Previous" id="Doy-Ge-nU0">
                             <color key="tintColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="backButton_Touch_Up_Inside:" destination="ahU-gQ-4DY" id="WO3-46-i26"/>
@@ -337,7 +337,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aFm-t1-V3D">
-                        <barButtonItem key="leftBarButtonItem" image="ic_arrow_back" id="as2-O5-YA3">
+                        <barButtonItem key="leftBarButtonItem" image="Previous" id="as2-O5-YA3">
                             <color key="tintColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="backButton_Touch_Up_Inside:" destination="c30-0b-W2G" id="5N3-AP-xeo"/>
@@ -513,6 +513,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_arrow_back" width="18" height="18"/>
+        <image name="Previous" width="20" height="20"/>
     </resources>
 </document>
