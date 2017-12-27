@@ -23,7 +23,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="252" sectionHeaderHeight="28" sectionFooterHeight="28" id="aar-oq-QTQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeaturedRecipeCell" rowHeight="172" id="EtY-kZ-vRi" customClass="FeaturedRecipeTableViewCell" customModule="RECIPES" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="172"/>
@@ -35,7 +35,7 @@
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bec-b3-DTY">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="172"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="14" minimumInteritemSpacing="14" id="ptW-ap-aeS">
                                                 <size key="itemSize" width="253" height="142"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -50,6 +50,10 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="253" height="142"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3U1-0N-wcG">
+                                                                <rect key="frame" x="0.0" y="0.0" width="253" height="142"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cake" translatesAutoresizingMaskIntoConstraints="NO" id="5NY-Xc-wsa">
                                                                 <rect key="frame" x="0.0" y="0.0" width="253" height="142"/>
                                                             </imageView>
@@ -59,18 +63,23 @@
                                                         <constraint firstAttribute="bottom" secondItem="5NY-Xc-wsa" secondAttribute="bottom" id="HEY-3c-07P"/>
                                                         <constraint firstAttribute="trailing" secondItem="5NY-Xc-wsa" secondAttribute="trailing" id="Jk4-fb-Mpz"/>
                                                         <constraint firstItem="5NY-Xc-wsa" firstAttribute="top" secondItem="3eX-rb-n2f" secondAttribute="top" id="Qw0-fx-lXq"/>
+                                                        <constraint firstItem="3U1-0N-wcG" firstAttribute="top" secondItem="3eX-rb-n2f" secondAttribute="top" id="RTh-zX-Vww"/>
+                                                        <constraint firstAttribute="bottom" secondItem="3U1-0N-wcG" secondAttribute="bottom" id="Sv4-qz-GdA"/>
                                                         <constraint firstItem="5NY-Xc-wsa" firstAttribute="leading" secondItem="3eX-rb-n2f" secondAttribute="leading" id="VYH-Gu-bNI"/>
+                                                        <constraint firstAttribute="trailing" secondItem="3U1-0N-wcG" secondAttribute="trailing" id="qVo-Oq-SVx"/>
+                                                        <constraint firstItem="3U1-0N-wcG" firstAttribute="leading" secondItem="3eX-rb-n2f" secondAttribute="leading" id="rrX-Mc-I44"/>
                                                     </constraints>
                                                     <connections>
+                                                        <outlet property="backView" destination="3U1-0N-wcG" id="Gsu-DX-nJ4"/>
                                                         <outlet property="recipeImage" destination="5NY-Xc-wsa" id="pSR-Ue-WNx"/>
                                                     </connections>
                                                 </collectionViewCell>
                                             </cells>
                                         </collectionView>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="featuredCollectionView" destination="Bec-b3-DTY" id="28t-fM-bcr"/>
                                 </connections>
@@ -177,7 +186,7 @@
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="6dB-Dk-VFd" firstAttribute="leading" secondItem="rAW-SX-1WY" secondAttribute="leading" id="3xZ-Pf-hgZ"/>
                                                 <constraint firstItem="6dB-Dk-VFd" firstAttribute="top" secondItem="rAW-SX-1WY" secondAttribute="top" id="I3r-ze-q5K"/>
@@ -189,6 +198,7 @@
                                             </constraints>
                                         </view>
                                     </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="rAW-SX-1WY" firstAttribute="leading" secondItem="zNj-gy-b63" secondAttribute="leading" constant="16" id="0Re-of-6zr"/>
                                         <constraint firstAttribute="trailing" secondItem="rAW-SX-1WY" secondAttribute="trailing" constant="15" id="a9R-9Y-3Vi"/>
@@ -198,6 +208,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
+                                    <outlet property="backView" destination="rAW-SX-1WY" id="aiB-kP-MwW"/>
                                     <outlet property="categoryLabel" destination="Z1z-9D-9jD" id="5aT-8C-HOi"/>
                                     <outlet property="difficultyLabel" destination="X2X-H6-iBu" id="Mw8-Bg-BHQ"/>
                                     <outlet property="recipeImage" destination="6dB-Dk-VFd" id="WWd-Us-gfC"/>
