@@ -10,7 +10,7 @@ import UIKit
 
 class FeaturedRecipeTableViewCell: UITableViewCell {
 
-    //UI Properties
+    
     @IBOutlet weak var featuredCollectionView: UICollectionView!
     
     //First loading func
