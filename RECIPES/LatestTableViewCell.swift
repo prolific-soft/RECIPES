@@ -35,7 +35,6 @@ class LatestTableViewCell: UITableViewCell {
     func setUp(withRecipe : Recipe){
         self.loadImage(withRecipe: withRecipe)
         self.recipe = withRecipe
-        self.recipe = withRecipe
         self.categoryLabel.text = withRecipe.creditText!
         self.timeToCookLabel.text = String("\(withRecipe.readyInMinutes) minutes")
         self.recipeNameLabel.text = withRecipe.title!

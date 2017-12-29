@@ -219,7 +219,6 @@
                                     <outlet property="recipeNameLabel" destination="QEB-E1-l7E" id="o2C-Xw-XLs"/>
                                     <outlet property="servingLabel" destination="Shj-1B-JrT" id="g2H-cb-AJy"/>
                                     <outlet property="timeToCookLabel" destination="3bK-Gc-bRq" id="2BI-ff-Xm7"/>
-                                    <segue destination="yOx-MD-2G0" kind="show" id="tDM-Gb-FXz"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -236,6 +235,9 @@
                             <color key="tintColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="yOx-MD-2G0" kind="show" identifier="toRecipeOpenTVC" id="liF-xO-3xK"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBZ-Pq-CqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -250,7 +252,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipeDescriptionTableViewCell" rowHeight="369" id="db6-aC-p8J" customClass="RecipeDescriptionTableViewCell" customModule="RECIPES" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="recipeDescriptionTableViewCell" rowHeight="369" id="db6-aC-p8J" customClass="RecipeDescriptionTableViewCell" customModule="RECIPES" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="369"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="db6-aC-p8J" id="BX7-2G-cbh">
@@ -369,16 +371,15 @@
                                     <outlet property="timeToCookLabel" destination="397-f9-PKR" id="oFv-Rw-CdA"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingredientTableViewCell" rowHeight="49" id="Rc6-wt-RrY" customClass="IngredientTableViewCell" customModule="RECIPES" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ingredientTableViewCell" rowHeight="49" id="Rc6-wt-RrY" customClass="IngredientTableViewCell" customModule="RECIPES" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="397" width="375" height="49"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rc6-wt-RrY" id="tbw-Pb-Jut">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="48.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQs-pM-4PC">
-                                            <rect key="frame" x="50" y="11" width="309" height="24"/>
-                                            <string key="text">Cup Mayonnaise lemon juice, sugar, salt Mayonnaise lemon juice, sugar, salt  Mayonnaise lemon juice, sugar, salt, Mayonnaise lemon juice, sugar, salt  Mayonnaise lemon juice, sugar, salt, Mayonnaise lemon juice, sugar, salt  Mayonnaise lemon juice, sugar, salt</string>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cup Mayonnaise lemon juice, sugar, salt Mayonnaise lemon juice, sugar, salt  Mayonnaise lemon juice" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQs-pM-4PC">
+                                            <rect key="frame" x="49.5" y="11" width="309.5" height="24"/>
                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                             <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
