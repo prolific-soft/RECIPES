@@ -10,6 +10,10 @@ import UIKit
 
 class InstructionTableViewCell: UITableViewCell {
 
+    //UI Properties
+    @IBOutlet weak var instructionNumberLabel: UILabel!
+    @IBOutlet weak var instructionLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

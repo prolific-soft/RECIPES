@@ -360,6 +360,14 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="Ag4-Ki-2xX" secondAttribute="trailing" constant="10" id="Rh9-Bm-MdL"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoryLabel" destination="3NL-OK-Dog" id="wAS-DN-5wt"/>
+                                    <outlet property="difficultyLabel" destination="vB8-R9-8jp" id="zwp-a9-GIy"/>
+                                    <outlet property="recipeImage" destination="N7f-Tn-Vnh" id="WKX-2Q-9XG"/>
+                                    <outlet property="recipeNameLabel" destination="ITc-Ko-tAQ" id="tAd-ar-qjD"/>
+                                    <outlet property="servingLabel" destination="MBU-xn-THF" id="8T3-nn-5Cn"/>
+                                    <outlet property="timeToCookLabel" destination="397-f9-PKR" id="oFv-Rw-CdA"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingredientTableViewCell" rowHeight="49" id="Rc6-wt-RrY" customClass="IngredientTableViewCell" customModule="RECIPES" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="397" width="375" height="49"/>
@@ -368,30 +376,86 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="48.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQs-pM-4PC">
-                                            <rect key="frame" x="58" y="15" width="301" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQs-pM-4PC">
+                                            <rect key="frame" x="50" y="11" width="309" height="24"/>
+                                            <string key="text">Cup Mayonnaise lemon juice, sugar, salt Mayonnaise lemon juice, sugar, salt  Mayonnaise lemon juice, sugar, salt, Mayonnaise lemon juice, sugar, salt  Mayonnaise lemon juice, sugar, salt, Mayonnaise lemon juice, sugar, salt  Mayonnaise lemon juice, sugar, salt</string>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                             <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dxK-eM-gWo">
-                                            <rect key="frame" x="24" y="18" width="15" height="15"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jPK-Ud-vwl">
+                                            <rect key="frame" x="16" y="16" width="15" height="15"/>
                                             <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="Oka-U6-cYd"/>
+                                                <constraint firstAttribute="width" constant="15" id="ZHe-L9-jRf"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="CQs-pM-4PC" firstAttribute="leading" secondItem="jPK-Ud-vwl" secondAttribute="trailing" constant="19" id="A44-Wc-fBU"/>
+                                        <constraint firstAttribute="bottom" secondItem="CQs-pM-4PC" secondAttribute="bottom" constant="13" id="Dsf-en-CUv"/>
+                                        <constraint firstItem="jPK-Ud-vwl" firstAttribute="top" secondItem="tbw-Pb-Jut" secondAttribute="top" constant="16" id="LNt-Km-TUE"/>
+                                        <constraint firstItem="CQs-pM-4PC" firstAttribute="top" secondItem="tbw-Pb-Jut" secondAttribute="top" constant="11" id="N4k-wp-ng0"/>
+                                        <constraint firstItem="jPK-Ud-vwl" firstAttribute="leading" secondItem="tbw-Pb-Jut" secondAttribute="leading" constant="16" id="aqb-wP-tyn"/>
+                                        <constraint firstAttribute="trailing" secondItem="CQs-pM-4PC" secondAttribute="trailing" constant="16" id="uiI-w0-Yax"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ingredientLabel" destination="CQs-pM-4PC" id="hgJ-fH-1WV"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="instructionTableViewCell" rowHeight="73" id="5E3-n4-rDv" customClass="InstructionTableViewCell" customModule="RECIPES" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="446" width="375" height="73"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="instructionTableViewCell" rowHeight="54" id="5E3-n4-rDv" customClass="InstructionTableViewCell" customModule="RECIPES" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="446" width="375" height="54"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5E3-n4-rDv" id="YiA-Ta-MFn">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="53.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ee9-4Q-4mR">
+                                            <rect key="frame" x="16" y="15" width="25" height="25"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTT-fv-YNs">
+                                                    <rect key="frame" x="4" y="4" width="17" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="10"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="VTT-fv-YNs" firstAttribute="leading" secondItem="ee9-4Q-4mR" secondAttribute="leading" constant="4" id="1eM-5Y-JeJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="VTT-fv-YNs" secondAttribute="bottom" constant="4" id="7a3-8N-DoI"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="F0P-lP-plu"/>
+                                                <constraint firstAttribute="width" constant="25" id="Txs-ua-wL0"/>
+                                                <constraint firstAttribute="height" constant="25" id="bNm-2t-icK"/>
+                                                <constraint firstAttribute="trailing" secondItem="VTT-fv-YNs" secondAttribute="trailing" constant="4" id="lnR-Mw-yox"/>
+                                                <constraint firstItem="VTT-fv-YNs" firstAttribute="top" secondItem="ee9-4Q-4mR" secondAttribute="top" constant="4" id="r6N-gK-RgG"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1X-WP-nBK">
+                                            <rect key="frame" x="57" y="15" width="302" height="24.5"/>
+                                            <string key="text">Mayonnaise lemon juice, sugar, salt Mayonnaise lemon juice, sugar, salt  Mayonnaise lemon juice, sugar, salt  Mayonnaise lemon juice, sugar, salt Mayonnaise lemon juice, sugar, salt Mayonnaise lemon juice, sugar, salt Mayonnaise lemon juice, sugar, salt  Mayonnaise lemon juice, sugar, salt  Mayonnaise lemon juice, sugar, salt Mayonnaise lemon juice, sugar, salt</string>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                            <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="y1X-WP-nBK" firstAttribute="leading" secondItem="ee9-4Q-4mR" secondAttribute="trailing" constant="16" id="2Hu-eG-dwi"/>
+                                        <constraint firstItem="ee9-4Q-4mR" firstAttribute="leading" secondItem="YiA-Ta-MFn" secondAttribute="leading" constant="16" id="7u5-bF-8ZK"/>
+                                        <constraint firstAttribute="bottom" secondItem="y1X-WP-nBK" secondAttribute="bottom" constant="14" id="BNW-61-g2V"/>
+                                        <constraint firstItem="ee9-4Q-4mR" firstAttribute="top" secondItem="YiA-Ta-MFn" secondAttribute="top" constant="15" id="SxG-F6-7MV"/>
+                                        <constraint firstAttribute="trailing" secondItem="y1X-WP-nBK" secondAttribute="trailing" constant="16" id="jCS-CN-Wha"/>
+                                        <constraint firstItem="y1X-WP-nBK" firstAttribute="top" secondItem="YiA-Ta-MFn" secondAttribute="top" constant="15" id="kKw-73-jvN"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="instructionLabel" destination="y1X-WP-nBK" id="HDq-0B-Yaa"/>
+                                    <outlet property="instructionNumberLabel" destination="VTT-fv-YNs" id="ahr-R9-FbZ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

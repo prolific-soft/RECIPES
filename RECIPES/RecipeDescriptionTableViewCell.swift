@@ -10,6 +10,15 @@ import UIKit
 
 class RecipeDescriptionTableViewCell: UITableViewCell {
 
+    // UI Properties
+    @IBOutlet weak var recipeImage: UIImageView!
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var recipeNameLabel: UILabel!
+    @IBOutlet weak var timeToCookLabel: UILabel!
+    @IBOutlet weak var difficultyLabel: UILabel!
+    @IBOutlet weak var servingLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
