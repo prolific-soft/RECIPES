@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RecipeOpenTableHeaderView" customModule="RECIPES" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGh-xs-663">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INGREDIENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkU-SI-3aS" customClass="CustomLabel" customModule="RECIPES" customModuleProvider="target">
+                            <rect key="frame" x="8" y="8" width="359" height="20"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="tkU-SI-3aS" secondAttribute="trailing" constant="8" id="GGs-XG-ffm"/>
+                        <constraint firstItem="tkU-SI-3aS" firstAttribute="top" secondItem="fGh-xs-663" secondAttribute="top" constant="8" id="g8D-c8-YsD"/>
+                        <constraint firstItem="tkU-SI-3aS" firstAttribute="leading" secondItem="fGh-xs-663" secondAttribute="leading" constant="8" id="pBk-9q-7hN"/>
+                        <constraint firstAttribute="bottom" secondItem="tkU-SI-3aS" secondAttribute="bottom" constant="8" id="rFa-9q-tsI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fGh-xs-663" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="4Ru-Rt-Qzs"/>
+                <constraint firstItem="fGh-xs-663" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="MnJ-RJ-k02"/>
+                <constraint firstItem="fGh-xs-663" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="SUZ-SQ-gli"/>
+                <constraint firstItem="fGh-xs-663" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UCV-uD-4ic"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backgroundView" destination="fGh-xs-663" id="veJ-mv-Dic"/>
+                <outlet property="headerLabel" destination="tkU-SI-3aS" id="OkJ-zf-WDy"/>
+            </connections>
+            <point key="canvasLocation" x="31.5" y="-239"/>
+        </view>
+    </objects>
+</document>

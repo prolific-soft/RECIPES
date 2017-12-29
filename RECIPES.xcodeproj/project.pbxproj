@@ -14,6 +14,8 @@
 		EF1DF4DB1FF5BF3A0091C25D /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DF4DA1FF5BF3A0091C25D /* IngredientTableViewCell.swift */; };
 		EF1DF4DD1FF5C0FF0091C25D /* InstructionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DF4DC1FF5C0FF0091C25D /* InstructionTableViewCell.swift */; };
 		EF1DF4DF1FF5C2810091C25D /* RecipeDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DF4DE1FF5C2810091C25D /* RecipeDescriptionTableViewCell.swift */; };
+		EF1DF4E41FF6B9590091C25D /* RecipeOpenTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF1DF4E31FF6B9590091C25D /* RecipeOpenTableHeader.xib */; };
+		EF1DF4E61FF6BAC30091C25D /* RecipeOpenTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DF4E51FF6BAC30091C25D /* RecipeOpenTableHeaderView.swift */; };
 		EF53C9631F76F817009A1DB8 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF53C9621F76F817009A1DB8 /* Chameleon.framework */; };
 		EF53C9651F76FB78009A1DB8 /* Chameleon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF53C9641F76FB78009A1DB8 /* Chameleon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EF5547DB1F12693E00A7F5FE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5547DA1F12693E00A7F5FE /* CustomTextField.swift */; };
@@ -83,6 +85,8 @@
 		EF1DF4DA1FF5BF3A0091C25D /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
 		EF1DF4DC1FF5C0FF0091C25D /* InstructionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionTableViewCell.swift; sourceTree = "<group>"; };
 		EF1DF4DE1FF5C2810091C25D /* RecipeDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		EF1DF4E31FF6B9590091C25D /* RecipeOpenTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeOpenTableHeader.xib; sourceTree = "<group>"; };
+		EF1DF4E51FF6BAC30091C25D /* RecipeOpenTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeOpenTableHeaderView.swift; sourceTree = "<group>"; };
 		EF53C9621F76F817009A1DB8 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		EF53C9641F76FB78009A1DB8 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		EF5547DA1F12693E00A7F5FE /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 		EF1DF4D11FF5B5030091C25D /* Recipe Open */ = {
 			isa = PBXGroup;
 			children = (
+				EF1DF4E21FF6B9140091C25D /* XIB */,
 				EF1DF4D21FF5B5530091C25D /* RecipeOpenTableViewController.swift */,
 				EF1DF4DA1FF5BF3A0091C25D /* IngredientTableViewCell.swift */,
 				EF1DF4DC1FF5C0FF0091C25D /* InstructionTableViewCell.swift */,
@@ -206,6 +211,15 @@
 				EF1DF4D81FF5BEBE0091C25D /* Segue.swift */,
 			);
 			name = Enumerations;
+			sourceTree = "<group>";
+		};
+		EF1DF4E21FF6B9140091C25D /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				EF1DF4E31FF6B9590091C25D /* RecipeOpenTableHeader.xib */,
+				EF1DF4E51FF6BAC30091C25D /* RecipeOpenTableHeaderView.swift */,
+			);
+			name = XIB;
 			sourceTree = "<group>";
 		};
 		EF5547DE1F126D8B00A7F5FE /* Practice2 */ = {
@@ -449,6 +463,7 @@
 				EFE516E11F79BB7E00CC666F /* StartStoryboard.storyboard in Resources */,
 				EF8990AD1F0C87C300290667 /* LaunchScreen.storyboard in Resources */,
 				EF871C8E1F0F448E008260D5 /* SanFranciscoFont-master in Resources */,
+				EF1DF4E41FF6B9590091C25D /* RecipeOpenTableHeader.xib in Resources */,
 				EF5547E01F126DAE00A7F5FE /* Two.storyboard in Resources */,
 				EF55480C1F12CCF100A7F5FE /* Favorite.storyboard in Resources */,
 				EF8990AA1F0C87C300290667 /* Assets.xcassets in Resources */,
@@ -485,6 +500,7 @@
 				EF5547FE1F12CB2F00A7F5FE /* HomeTableViewController.swift in Sources */,
 				EF5547EF1F129B9600A7F5FE /* CustomNavigationController.swift in Sources */,
 				EF1DF4DD1FF5C0FF0091C25D /* InstructionTableViewCell.swift in Sources */,
+				EF1DF4E61FF6BAC30091C25D /* RecipeOpenTableHeaderView.swift in Sources */,
 				EF55481F1F13080200A7F5FE /* HomeTableHeaderView.swift in Sources */,
 				EF5547EB1F12837B00A7F5FE /* CustomTextFieldTwo.swift in Sources */,
 				EF7F1F141FF0E67E00C8E853 /* Recipes.swift in Sources */,
