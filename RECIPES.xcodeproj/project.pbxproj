@@ -16,6 +16,7 @@
 		EF1DF4DF1FF5C2810091C25D /* RecipeDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DF4DE1FF5C2810091C25D /* RecipeDescriptionTableViewCell.swift */; };
 		EF1DF4E41FF6B9590091C25D /* RecipeOpenTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF1DF4E31FF6B9590091C25D /* RecipeOpenTableHeader.xib */; };
 		EF1DF4E61FF6BAC30091C25D /* RecipeOpenTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DF4E51FF6BAC30091C25D /* RecipeOpenTableHeaderView.swift */; };
+		EF1DF4E81FF6E4A90091C25D /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DF4E71FF6E4A90091C25D /* CategoryTableViewCell.swift */; };
 		EF53C9631F76F817009A1DB8 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF53C9621F76F817009A1DB8 /* Chameleon.framework */; };
 		EF53C9651F76FB78009A1DB8 /* Chameleon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF53C9641F76FB78009A1DB8 /* Chameleon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EF5547DB1F12693E00A7F5FE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5547DA1F12693E00A7F5FE /* CustomTextField.swift */; };
@@ -87,6 +88,7 @@
 		EF1DF4DE1FF5C2810091C25D /* RecipeDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		EF1DF4E31FF6B9590091C25D /* RecipeOpenTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeOpenTableHeader.xib; sourceTree = "<group>"; };
 		EF1DF4E51FF6BAC30091C25D /* RecipeOpenTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeOpenTableHeaderView.swift; sourceTree = "<group>"; };
+		EF1DF4E71FF6E4A90091C25D /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		EF53C9621F76F817009A1DB8 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		EF53C9641F76FB78009A1DB8 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		EF5547DA1F12693E00A7F5FE /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				EF5547FF1F12CB7E00A7F5FE /* CategoryTableViewController.swift */,
+				EF1DF4E71FF6E4A90091C25D /* CategoryTableViewCell.swift */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				EF1DF4D71FF5BEB00091C25D /* Cell.swift in Sources */,
 				EFC25ACC1FF2B11700970981 /* Extension.swift in Sources */,
 				EF5548021F12CBB100A7F5FE /* FavoriteTableViewController.swift in Sources */,
+				EF1DF4E81FF6E4A90091C25D /* CategoryTableViewCell.swift in Sources */,
 				EF1DF4DF1FF5C2810091C25D /* RecipeDescriptionTableViewCell.swift in Sources */,
 				EF5548121F12EE0400A7F5FE /* FeaturedRecipeTableViewCell.swift in Sources */,
 				EF5548001F12CB7E00A7F5FE /* CategoryTableViewController.swift in Sources */,

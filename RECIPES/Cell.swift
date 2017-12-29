@@ -14,5 +14,6 @@ enum Cell : String {
     case ingredientTableViewCell = "ingredientTableViewCell"
     case instructionTableViewCell = "instructionTableViewCell"
     case recipeDescriptionTableViewCell = "recipeDescriptionTableViewCell"
+    case categoryTableCell = "categoryTableCell"
     
 }
