@@ -247,7 +247,7 @@
         <scene sceneID="Pg6-DS-fbd">
             <objects>
                 <tableViewController id="yOx-MD-2G0" customClass="RecipeOpenTableViewController" customModule="RECIPES" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="t0u-6P-goU">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="t0u-6P-goU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -256,7 +256,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="369"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="db6-aC-p8J" id="BX7-2G-cbh">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="368.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="369"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="breakfast" translatesAutoresizingMaskIntoConstraints="NO" id="N7f-Tn-Vnh">
@@ -375,27 +375,27 @@
                                 <rect key="frame" x="0.0" y="397" width="375" height="49"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rc6-wt-RrY" id="tbw-Pb-Jut">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="48.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cup Mayonnaise lemon juice, sugar, salt Mayonnaise lemon juice, sugar, salt  Mayonnaise lemon juice" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQs-pM-4PC">
-                                            <rect key="frame" x="49.5" y="11" width="309.5" height="24"/>
+                                            <rect key="frame" x="50" y="11" width="308.5" height="25"/>
                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                             <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jPK-Ud-vwl">
-                                            <rect key="frame" x="16" y="16" width="15" height="15"/>
+                                            <rect key="frame" x="16" y="16" width="10" height="10"/>
                                             <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="15" id="Oka-U6-cYd"/>
-                                                <constraint firstAttribute="width" constant="15" id="ZHe-L9-jRf"/>
+                                                <constraint firstAttribute="height" constant="10" id="Oka-U6-cYd"/>
+                                                <constraint firstAttribute="width" constant="10" id="ZHe-L9-jRf"/>
                                             </constraints>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstItem="CQs-pM-4PC" firstAttribute="leading" secondItem="jPK-Ud-vwl" secondAttribute="trailing" constant="19" id="A44-Wc-fBU"/>
+                                        <constraint firstItem="CQs-pM-4PC" firstAttribute="leading" secondItem="jPK-Ud-vwl" secondAttribute="trailing" constant="24" id="A44-Wc-fBU"/>
                                         <constraint firstAttribute="bottom" secondItem="CQs-pM-4PC" secondAttribute="bottom" constant="13" id="Dsf-en-CUv"/>
                                         <constraint firstItem="jPK-Ud-vwl" firstAttribute="top" secondItem="tbw-Pb-Jut" secondAttribute="top" constant="16" id="LNt-Km-TUE"/>
                                         <constraint firstItem="CQs-pM-4PC" firstAttribute="top" secondItem="tbw-Pb-Jut" secondAttribute="top" constant="11" id="N4k-wp-ng0"/>
@@ -404,14 +404,15 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="bulletPointView" destination="jPK-Ud-vwl" id="1uC-3e-xCG"/>
                                     <outlet property="ingredientLabel" destination="CQs-pM-4PC" id="hgJ-fH-1WV"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="instructionTableViewCell" rowHeight="54" id="5E3-n4-rDv" customClass="InstructionTableViewCell" customModule="RECIPES" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="instructionTableViewCell" rowHeight="54" id="5E3-n4-rDv" customClass="InstructionTableViewCell" customModule="RECIPES" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="446" width="375" height="54"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5E3-n4-rDv" id="YiA-Ta-MFn">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="53.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ee9-4Q-4mR">
@@ -436,7 +437,7 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1X-WP-nBK">
-                                            <rect key="frame" x="57" y="15" width="302" height="24.5"/>
+                                            <rect key="frame" x="57" y="15.5" width="302" height="24.5"/>
                                             <string key="text">Mayonnaise lemon juice, sugar, salt Mayonnaise lemon juice, sugar, salt  Mayonnaise lemon juice, sugar, salt  Mayonnaise lemon juice, sugar, salt Mayonnaise lemon juice, sugar, salt Mayonnaise lemon juice, sugar, salt Mayonnaise lemon juice, sugar, salt  Mayonnaise lemon juice, sugar, salt  Mayonnaise lemon juice, sugar, salt Mayonnaise lemon juice, sugar, salt</string>
                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                             <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -454,6 +455,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="bulletPointView" destination="ee9-4Q-4mR" id="i8v-yY-Iom"/>
                                     <outlet property="instructionLabel" destination="y1X-WP-nBK" id="HDq-0B-Yaa"/>
                                     <outlet property="instructionNumberLabel" destination="VTT-fv-YNs" id="ahr-R9-FbZ"/>
                                 </connections>
