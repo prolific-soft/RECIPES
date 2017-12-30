@@ -19,4 +19,6 @@ enum Cell : String {
     case categoryDetailTableViewCell = "categoryDetailTableViewCell"
     case categoryReciepeTableViewCell = "categoryReciepeTableViewCell"
     
+    case favoriteTableCell = "favoriteTableCell"
+    
 }

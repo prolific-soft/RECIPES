@@ -1,14 +1,14 @@
 //
-//  CategoryReciepeTableViewCell.swift
+//  FavoriteTableViewCell.swift
 //  RECIPES
 //
-//  Created by Chidi Emeh on 12/29/17.
+//  Created by Chidi Emeh on 12/30/17.
 //  Copyright © 2017 Chilly Bean. All rights reserved.
 //
 
 import UIKit
 
-class CategoryReciepeTableViewCell: UITableViewCell {
+class FavoriteTableViewCell: UITableViewCell {
 
     //UI Properties
     @IBOutlet weak var recipeImage: UIImageView!
@@ -16,32 +16,35 @@ class CategoryReciepeTableViewCell: UITableViewCell {
     @IBOutlet weak var timeToCookLabel: UILabel!
     @IBOutlet weak var difficultyLabel: UILabel!
     @IBOutlet weak var servingLabel: UILabel!
-    
+    @IBOutlet weak var categoryNameLabel: UILabel!
     @IBOutlet weak var backView: UIView!
     
     var recipe : Recipe?
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-         configure()
+        configure()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
-
+    
+    
     func setUp(withRecipe : Recipe){
         recipe = withRecipe
+        categoryNameLabel.text = withRecipe.creditText!
         recipeNameLabel.text = withRecipe.title
         timeToCookLabel.text = String("\(withRecipe.readyInMinutes) minutes")
         difficultyLabel.text = "Medium"
         servingLabel.text = String("\(withRecipe.servings!) people")
         loadImage(withRecipe: withRecipe)
+        
     }
-
     
+    //THIS IS DRY CODE! REFACTOR THIS AT UIIMAGEVIEW
     func loadImage(withRecipe : Recipe){
         var downloadeImage = UIImage()
         //Download Image
@@ -58,6 +61,7 @@ class CategoryReciepeTableViewCell: UITableViewCell {
     }
     
     
+    //THIS IS DRY CODE! REFACTOR THIS AT UIVIEW
     func configure(){
         
         //TODO:
@@ -76,4 +80,5 @@ class CategoryReciepeTableViewCell: UITableViewCell {
     
     
     
+
 }

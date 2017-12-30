@@ -65,6 +65,7 @@
 		EF8990AA1F0C87C300290667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF8990A91F0C87C300290667 /* Assets.xcassets */; };
 		EF8990AD1F0C87C300290667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF8990AB1F0C87C300290667 /* LaunchScreen.storyboard */; };
 		EFC25ACC1FF2B11700970981 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC25ACB1FF2B11700970981 /* Extension.swift */; };
+		EFCBCF871FF838F400E4322C /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCBCF861FF838F400E4322C /* FavoriteTableViewCell.swift */; };
 		EFE516E11F79BB7E00CC666F /* StartStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE516E01F79BB7E00CC666F /* StartStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -143,6 +144,7 @@
 		EF8990AC1F0C87C300290667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF8990AE1F0C87C300290667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFC25ACB1FF2B11700970981 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		EFCBCF861FF838F400E4322C /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		EFE516E01F79BB7E00CC666F /* StartStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				EF5548011F12CBB100A7F5FE /* FavoriteTableViewController.swift */,
+				EFCBCF861FF838F400E4322C /* FavoriteTableViewCell.swift */,
 			);
 			name = Favorite;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				EF1DF4D31FF5B5530091C25D /* RecipeOpenTableViewController.swift in Sources */,
 				EF1DF4D71FF5BEB00091C25D /* Cell.swift in Sources */,
 				EFC25ACC1FF2B11700970981 /* Extension.swift in Sources */,
+				EFCBCF871FF838F400E4322C /* FavoriteTableViewCell.swift in Sources */,
 				EF5548021F12CBB100A7F5FE /* FavoriteTableViewController.swift in Sources */,
 				EF1DF4E81FF6E4A90091C25D /* CategoryTableViewCell.swift in Sources */,
 				EF1DF4DF1FF5C2810091C25D /* RecipeDescriptionTableViewCell.swift in Sources */,
