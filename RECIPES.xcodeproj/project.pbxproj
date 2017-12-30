@@ -17,6 +17,10 @@
 		EF1DF4E41FF6B9590091C25D /* RecipeOpenTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF1DF4E31FF6B9590091C25D /* RecipeOpenTableHeader.xib */; };
 		EF1DF4E61FF6BAC30091C25D /* RecipeOpenTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DF4E51FF6BAC30091C25D /* RecipeOpenTableHeaderView.swift */; };
 		EF1DF4E81FF6E4A90091C25D /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DF4E71FF6E4A90091C25D /* CategoryTableViewCell.swift */; };
+		EF1DF4EA1FF6F79F0091C25D /* response-2.json in Resources */ = {isa = PBXBuildFile; fileRef = EF1DF4E91FF6F79F0091C25D /* response-2.json */; };
+		EF1DF4EC1FF70FB80091C25D /* CategoryOpenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DF4EB1FF70FB80091C25D /* CategoryOpenTableViewController.swift */; };
+		EF1DF4EF1FF7110A0091C25D /* CategoryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DF4EE1FF7110A0091C25D /* CategoryDetailTableViewCell.swift */; };
+		EF1DF4F11FF711220091C25D /* CategoryReciepeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1DF4F01FF711220091C25D /* CategoryReciepeTableViewCell.swift */; };
 		EF53C9631F76F817009A1DB8 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF53C9621F76F817009A1DB8 /* Chameleon.framework */; };
 		EF53C9651F76FB78009A1DB8 /* Chameleon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF53C9641F76FB78009A1DB8 /* Chameleon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EF5547DB1F12693E00A7F5FE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5547DA1F12693E00A7F5FE /* CustomTextField.swift */; };
@@ -89,6 +93,10 @@
 		EF1DF4E31FF6B9590091C25D /* RecipeOpenTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeOpenTableHeader.xib; sourceTree = "<group>"; };
 		EF1DF4E51FF6BAC30091C25D /* RecipeOpenTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeOpenTableHeaderView.swift; sourceTree = "<group>"; };
 		EF1DF4E71FF6E4A90091C25D /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		EF1DF4E91FF6F79F0091C25D /* response-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "response-2.json"; sourceTree = "<group>"; };
+		EF1DF4EB1FF70FB80091C25D /* CategoryOpenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryOpenTableViewController.swift; sourceTree = "<group>"; };
+		EF1DF4EE1FF7110A0091C25D /* CategoryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailTableViewCell.swift; sourceTree = "<group>"; };
+		EF1DF4F01FF711220091C25D /* CategoryReciepeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryReciepeTableViewCell.swift; sourceTree = "<group>"; };
 		EF53C9621F76F817009A1DB8 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		EF53C9641F76FB78009A1DB8 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		EF5547DA1F12693E00A7F5FE /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -165,6 +173,7 @@
 		EF1DF4CB1FF2C0840091C25D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				EF1DF4ED1FF710890091C25D /* Category Open */,
 				EF5547FF1F12CB7E00A7F5FE /* CategoryTableViewController.swift */,
 				EF1DF4E71FF6E4A90091C25D /* CategoryTableViewCell.swift */,
 			);
@@ -191,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				EF1DF4CF1FF2C6240091C25D /* response.json */,
+				EF1DF4E91FF6F79F0091C25D /* response-2.json */,
 			);
 			name = JSON;
 			sourceTree = "<group>";
@@ -223,6 +233,16 @@
 				EF1DF4E51FF6BAC30091C25D /* RecipeOpenTableHeaderView.swift */,
 			);
 			name = XIB;
+			sourceTree = "<group>";
+		};
+		EF1DF4ED1FF710890091C25D /* Category Open */ = {
+			isa = PBXGroup;
+			children = (
+				EF1DF4EB1FF70FB80091C25D /* CategoryOpenTableViewController.swift */,
+				EF1DF4EE1FF7110A0091C25D /* CategoryDetailTableViewCell.swift */,
+				EF1DF4F01FF711220091C25D /* CategoryReciepeTableViewCell.swift */,
+			);
+			name = "Category Open";
 			sourceTree = "<group>";
 		};
 		EF5547DE1F126D8B00A7F5FE /* Practice2 */ = {
@@ -471,6 +491,7 @@
 				EF55480C1F12CCF100A7F5FE /* Favorite.storyboard in Resources */,
 				EF8990AA1F0C87C300290667 /* Assets.xcassets in Resources */,
 				EF8990A81F0C87C300290667 /* Main.storyboard in Resources */,
+				EF1DF4EA1FF6F79F0091C25D /* response-2.json in Resources */,
 				EF1DF4D01FF2C6240091C25D /* response.json in Resources */,
 				EF5547F81F12BFD400A7F5FE /* TabBarMenu.storyboard in Resources */,
 			);
@@ -488,8 +509,10 @@
 				EF5547DB1F12693E00A7F5FE /* CustomTextField.swift in Sources */,
 				EF5547E51F12760D00A7F5FE /* CustomButtonTwo.swift in Sources */,
 				EF5547E71F127BAB00A7F5FE /* CustomLabelTwo.swift in Sources */,
+				EF1DF4F11FF711220091C25D /* CategoryReciepeTableViewCell.swift in Sources */,
 				EF5547E21F126E1000A7F5FE /* LogSignViewController.swift in Sources */,
 				EF7C7C361F11BF14000DFDC8 /* CustomButton.swift in Sources */,
+				EF1DF4EC1FF70FB80091C25D /* CategoryOpenTableViewController.swift in Sources */,
 				EF1DF4D31FF5B5530091C25D /* RecipeOpenTableViewController.swift in Sources */,
 				EF1DF4D71FF5BEB00091C25D /* Cell.swift in Sources */,
 				EFC25ACC1FF2B11700970981 /* Extension.swift in Sources */,
@@ -506,6 +529,7 @@
 				EF1DF4DD1FF5C0FF0091C25D /* InstructionTableViewCell.swift in Sources */,
 				EF1DF4E61FF6BAC30091C25D /* RecipeOpenTableHeaderView.swift in Sources */,
 				EF55481F1F13080200A7F5FE /* HomeTableHeaderView.swift in Sources */,
+				EF1DF4EF1FF7110A0091C25D /* CategoryDetailTableViewCell.swift in Sources */,
 				EF5547EB1F12837B00A7F5FE /* CustomTextFieldTwo.swift in Sources */,
 				EF7F1F141FF0E67E00C8E853 /* Recipes.swift in Sources */,
 				EF5547DD1F126B9300A7F5FE /* SignUpViewController.swift in Sources */,

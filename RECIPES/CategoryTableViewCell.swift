@@ -13,6 +13,9 @@ class CategoryTableViewCell: UITableViewCell {
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var categoryLabel: CustomLabel!
     
+    var recipes = [Recipe]()
+    var categoryName : String?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,6 +25,14 @@ class CategoryTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
+    
+    func setUp(categoryName: String, recipes : [Recipe]){
+        self.categoryLabel.text = categoryName.uppercased()
+        self.recipes = recipes
+        self.categoryName = categoryName
+    }
+    
     
     func configureView(){
         

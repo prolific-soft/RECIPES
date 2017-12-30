@@ -16,4 +16,7 @@ enum Cell : String {
     case recipeDescriptionTableViewCell = "recipeDescriptionTableViewCell"
     case categoryTableCell = "categoryTableCell"
     
+    case categoryDetailTableViewCell = "categoryDetailTableViewCell"
+    case categoryReciepeTableViewCell = "categoryReciepeTableViewCell"
+    
 }

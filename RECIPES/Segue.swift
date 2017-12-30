@@ -10,4 +10,5 @@ import Foundation
 
 enum Segue : String {
     case toRecipeOpenTVC = "toRecipeOpenTVC"
+    case toCategoryOpenTVC = "toCategoryOpenTVC"
 }
