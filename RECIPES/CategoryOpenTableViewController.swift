@@ -102,11 +102,24 @@ extension CategoryOpenTableViewController {
             recipeOpenTVC.recipe = categoryRecipeTVcell?.recipe
         }
     }
-    
-    
 }
 
 
+//MARK: - Row Height
+extension CategoryOpenTableViewController {
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.section {
+        case 0:
+            return 330
+        case 1:
+            return 256
+        default:
+            return 0
+        }
+    }
+    
+}
 
 
 

@@ -11,21 +11,14 @@ import UIKit
 class FavoriteTableViewController: UITableViewController {
 
     //Class Properties
-    var recipes = [Recipe]() {
-        didSet {
-            print("Recipes was set : \(recipes.count)")
-        }
-    }
+    var recipes = [Recipe]()
     
-    //First Loading Func
+    //First 
     override func viewDidLoad() {
         super.viewDidLoad()
          self.clearsSelectionOnViewWillAppear = true
         loadData()
     }
-
-
-    // MARK: - Table view data source
 
 
 }
@@ -70,6 +63,50 @@ extension FavoriteTableViewController {
     }
 
 }
+
+
+//MARK: - Segue
+extension FavoriteTableViewController {
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: Segue.favoriteToRecipeOpen.rawValue, sender: indexPath)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Segue.favoriteToRecipeOpen.rawValue {
+            
+            guard let recipeOpenTVC = segue.destination as? RecipeOpenTableViewController else {return}
+            guard let indexPath = sender as? NSIndexPath else { return }
+            
+            let categoryRecipeTVcell = tableView.cellForRow(at: indexPath as IndexPath) as? FavoriteTableViewCell
+            recipeOpenTVC.recipe = categoryRecipeTVcell?.recipe
+        }
+    }
+    
+}
+
+
+
+// MARK: - Editing Cells
+extension FavoriteTableViewController {
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        //Only section 0 can be deleted
+        return indexPath.section == 0 ? true : false
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            // Delete Recipe
+            tableView.beginUpdates()
+            recipes.remove(at: indexPath.row)
+            tableView.endUpdates()
+            tableView.reloadData()
+        }
+    }
+}
+
 
 
 

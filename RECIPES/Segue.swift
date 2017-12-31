@@ -12,4 +12,5 @@ enum Segue : String {
     case toRecipeOpenTVC = "toRecipeOpenTVC"
     case toCategoryOpenTVC = "toCategoryOpenTVC"
     case categoryOpenToRecipeOpen = "categoryOpenToRecipeOpen"
+    case favoriteToRecipeOpen = "favoriteToRecipeOpen"
 }
