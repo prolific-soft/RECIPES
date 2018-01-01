@@ -1,8 +1,8 @@
 <h1 align="center">
- # FLAVR (RECIPES)
+ # FLAVR
 </h1>
 
-<h4 align="center"> Explore, search and discover tantalizing recipes. Powered by Spoonacular API. Built with Firebase backend. </h4>
+<h4 align="center"> Explore, search and discover tantalizing recipes. Powered by Spoonacular API. Built with Firebase backend.</h4>
 
 <p align="center">
   <a href="#key-features">Features</a> •
@@ -13,7 +13,7 @@
 
 
 <p align="center">
-	<a href="http://g.recordit.co/lNcMxIYZCN.gif"><img src="http://g.recordit.co/lNcMxIYZCN.gif" title=“FLAVR - Home”/></a>
+	<a href="http://g.recordit.co/lNcMxIYZCN.gif"><img src="http://g.recordit.co/lNcMxIYZCN.gif" title=“FLAVR-Home”/></a>
 </p>
 
 
@@ -30,8 +30,11 @@
 
 
 <p align="center">
-	<a href="http://g.recordit.co/KLIxx565xd.gif"><img src="http://g.recordit.co/KLIxx565xd.gif" title=“FLAVR - Categories”/></a>
-	<a href="http://g.recordit.co/FHKkLsxNag.gif"><img src="http://g.recordit.co/FHKkLsxNag.gif" title=“FLAVR - Favorites”/></a>
+	<a href="http://g.recordit.co/KLIxx565xd.gif"><img src="http://g.recordit.co/KLIxx565xd.gif" title=“FLAVR-Categories”/></a>
+</p>
+
+<p align="center">
+	<a href="http://g.recordit.co/FHKkLsxNag.gif"><img src="http://g.recordit.co/FHKkLsxNag.gif" title=“FLAVR-Favorites”/></a>
 </p>
 
 
@@ -47,8 +50,6 @@
 ## Download
 
 This app is not available in the app store. Work is still in progress.
-This is my first attempt. Still rough and a lot of work to be done. But this is how far i've come from the scratch.
-The app was designed by [Silvia Medeiros](https://dribbble.com/silviacm).
 
 
 ## Credits
