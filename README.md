@@ -13,9 +13,11 @@
 
 
 <p align="center">
-	<a href="http://g.recordit.co/lNcMxIYZCN.gif"><img src="http://g.recordit.co/lNcMxIYZCN.gif" title=“FLAVR-Home”/></a>
+	<a href="http://g.recordit.co/lNcMxIYZCN.gif"><img src="http://g.recordit.co/lNcMxIYZCN.gif" title=“Home”/></a>
 </p>
-
+<p align="center">
+	<a href="http://g.recordit.co/KLIxx565xd.gif"><img src="http://g.recordit.co/KLIxx565xd.gif" title=“Favorites”/></a>
+</p>
 
 ## Features
 
@@ -30,12 +32,9 @@
 
 
 <p align="center">
-	<a href="http://g.recordit.co/KLIxx565xd.gif"><img src="http://g.recordit.co/KLIxx565xd.gif" title=“FLAVR-Categories”/></a>
+	<a href="http://g.recordit.co/KLIxx565xd.gif"><img src="http://g.recordit.co/KLIxx565xd.gif" title=“Categories”/></a>
 </p>
 
-<p align="center">
-	<a href="http://g.recordit.co/FHKkLsxNag.gif"><img src="http://g.recordit.co/FHKkLsxNag.gif" title=“FLAVR-Favorites”/></a>
-</p>
 
 
 ## Todo List
