@@ -30,7 +30,7 @@
 
 
 <p align="center">
-	<a href="http://g.recordit.co/KLIxx565xd.gif"><img src="http://g.recordit.co/KLIxx565xd.gif" title=“Categories”/></a>
+	<a href="http://g.recordit.co/wvdTMH5oU4.gif"><img src="http://g.recordit.co/wvdTMH5oU4.gif" title=“Categories”/></a>
 </p>
 <p align="center">
 	<a href="http://g.recordit.co/FHKkLsxNag.gif"><img src="http://g.recordit.co/FHKkLsxNag.gif" title=“Favorites”/></a>
