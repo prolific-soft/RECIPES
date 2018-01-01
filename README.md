@@ -1,5 +1,5 @@
 <h1 align="center">
- # FLAVR
+ FLAVR
 </h1>
 
 <h4 align="center"> Explore, search and discover tantalizing recipes. Powered by Spoonacular API. Built with Firebase backend.</h4>
