@@ -43,7 +43,8 @@
 * Cache and Load Images gracefully
 * Integrate Firebase 
 * Save recipe per logged in user
-* Implement Search
+* Implement Searc
+* Add profile and settings
 
 
 
